@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TopAddress тестовое задание</title>
+
+		<script defer>
+			let blockHash = window.location.hash;
+			let token2Element = document.getElementById("token2");
+			if (token2Element) {
+				window.location.hash = "#token2";
+				token2Element.scrollIntoView();
+			}
+		</script>
+
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			.wrapper {
+				max-width: 1258px;
+				margin: 0 auto;
+				padding: 29px;
+			}
+
+			.item {
+				display: flex;
+				align-items: flex-start;
+				border: 1px solid #9f9f9f;
+				border-radius: 7px;
+			}
+
+			.item + .item {
+				margin-top: 600px;
+			}
+
+			.item__info {
+				margin-left: 20px;
+			}
+
+			.item__img {
+				max-width: 300px;
+			}
+
+			.item__top {
+				display: flex;
+				align-items: flex-start;
+				padding: 20px 0;
+				justify-content: space-between;
+			}
+
+			.item__title {
+				margin: 0;
+				max-width: 500px;
+			}
+
+			.item__title .red {
+				color: red;
+			}
+
+			.item__author {
+				display: flex;
+				align-items: center;
+				gap: 20px;
+			}
+
+			.item__author svg {
+				vertical-align: middle;
+			}
+
+			@media (max-width: 640px) {
+				.item {
+					flex-direction: column;
+				}
+
+				.item__img {
+					max-width: 100%;
+				}
+
+				.item__info {
+					margin-left: 0;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="item" id="token1">
+				<img
+					src="./img/slider.jpeg"
+					alt="Картинка не найдена"
+					class="item__img"
+				/>
+				<div class="item__info">
+					<div class="item__top">
+						<h3 class="item__title">
+							<span class="red">первый.</span> 2-спальные
+							апартаменты с видом на море в ORLA Dorchester
+							Collection от застройщика Omniyat
+						</h3>
+						<div class="item__author">
+							<span>Author</span>
+							<span
+								><svg
+									width="24"
+									height="24"
+									xmlns="http://www.w3.org/2000/svg"
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+								>
+									<path
+										d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 11h6v1h-7v-9h1v8z"
+									/></svg
+								>16:17</span
+							>
+						</div>
+					</div>
+					<p class="item__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing
+						elit. Numquam quam fugit aperiam tenetur, ad quod
+						explicabo suscipit sed autem tempore dignissimos
+						voluptatem?
+					</p>
+				</div>
+			</div>
+			<div class="item" id="token2">
+				<img
+					src="./img/slider.jpeg"
+					alt="Картинка не найдена"
+					class="item__img"
+				/>
+				<div class="item__info">
+					<div class="item__top">
+						<h3 class="item__title">
+							<span class="red">второй.</span> 2-спальные
+							апартаменты с видом на море в ORLA Dorchester
+							Collection от застройщика Omniyat
+						</h3>
+						<div class="item__author">
+							<span>Author</span>
+							<span
+								><svg
+									width="24"
+									height="24"
+									xmlns="http://www.w3.org/2000/svg"
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+								>
+									<path
+										d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 11h6v1h-7v-9h1v8z"
+									/></svg
+								>16:17</span
+							>
+						</div>
+					</div>
+					<p class="item__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing
+						elit. Numquam quam fugit aperiam tenetur, ad quod
+						explicabo suscipit sed autem tempore dignissimos
+						voluptatem?
+					</p>
+				</div>
+			</div>
+			<div class="item" id="token3">
+				<img
+					src="./img/slider.jpeg"
+					alt="Картинка не найдена"
+					class="item__img"
+				/>
+				<div class="item__info">
+					<div class="item__top">
+						<h3 class="item__title">
+							<span class="red">третий.</span> Lorem ipsum dolor
+							sit amet consectetur adipisicing elit.
+						</h3>
+						<div class="item__author">
+							<span>Author</span>
+							<span
+								><svg
+									width="24"
+									height="24"
+									xmlns="http://www.w3.org/2000/svg"
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+								>
+									<path
+										d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 11h6v1h-7v-9h1v8z"
+									/></svg
+								>18:47</span
+							>
+						</div>
+					</div>
+					<p class="item__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing
+						elit. Numquam quam fugit aperiam tenetur, ad quod
+						explicabo suscipit sed autem tempore dignissimos
+						voluptatem?
+					</p>
+				</div>
+			</div>
+			<div class="item" id="token4">
+				<img
+					src="./img/slider.jpeg"
+					alt="Картинка не найдена"
+					class="item__img"
+				/>
+				<div class="item__info">
+					<div class="item__top">
+						<h3 class="item__title">
+							<span class="red">четвёртый.</span> Andy shoes are
+							designed to keeping in mind durability as well
+						</h3>
+						<div class="item__author">
+							<span>Author</span>
+							<span
+								><svg
+									width="24"
+									height="24"
+									xmlns="http://www.w3.org/2000/svg"
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+								>
+									<path
+										d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 11h6v1h-7v-9h1v8z"
+									/></svg
+								>18:47</span
+							>
+						</div>
+					</div>
+					<p class="item__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing
+						elit. Numquam quam fugit aperiam tenetur, ad quod
+						explicabo suscipit sed autem tempore dignissimos
+						voluptatem?
+					</p>
+				</div>
+			</div>
+			<div class="item" id="token5">
+				<img
+					src="./img/slider.jpeg"
+					alt="Картинка не найдена"
+					class="item__img"
+				/>
+				<div class="item__info">
+					<div class="item__top">
+						<h3 class="item__title">
+							<span class="red">пятый.</span> Lorem ipsum dolor
+							sit amet consectetur adipisicing elit.
+						</h3>
+						<div class="item__author">
+							<span>Author</span>
+							<span
+								><svg
+									width="24"
+									height="24"
+									xmlns="http://www.w3.org/2000/svg"
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+								>
+									<path
+										d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 11h6v1h-7v-9h1v8z"
+									/></svg
+								>18:47</span
+							>
+						</div>
+					</div>
+					<p class="item__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing
+						elit. Numquam quam fugit aperiam tenetur, ad quod
+						explicabo suscipit sed autem tempore dignissimos
+						voluptatem?
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

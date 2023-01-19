@@ -6,11 +6,201 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>TopAddress тестовое задание</title>
 
+		<link rel="stylesheet" href="itc-slider/itc-slider.min.css" />
 		<style>
 			* {
 				box-sizing: border-box;
 			}
+
+			body {
+				min-height: 100vh;
+			}
+
+			.wrapper {
+				max-width: 1080px;
+				margin: 0 auto;
+			}
+
+			.itc-slider {
+				padding: 0 50px;
+			}
+
+			.itc-slider__wrapper {
+				border: 1px solid #9f9f9f;
+				border-radius: 7px;
+			}
+
+			.itc-slider__items {
+				margin: 0 -10px;
+			}
+
+			.itc-slider__item {
+				flex: 1 0 33%;
+				max-width: 33%;
+				padding: 0 10px;
+				padding-right: 0;
+				display: block;
+				text-decoration: none;
+				color: inherit;
+			}
+
+			.itc-slider__item:hover .itc-slider__img {
+				transform: scale(1.02);
+			}
+
+			.itc-slider__img {
+				max-width: 100%;
+				transition: transform 0.123s ease-in;
+			}
+
+			.itc-slider__title {
+				margin-top: 20px;
+			}
+
+			.itc-slider__title .red {
+				color: red;
+			}
+
+			.itc-slider__author {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			@media (max-width: 800px) {
+				.itc-slider__item {
+					flex-basis: 50%;
+					max-width: 50%;
+				}
+			}
+			@media (max-width: 640px) {
+				.itc-slider__item {
+					flex-basis: 100%;
+					max-width: 100%;
+				}
+			}
 		</style>
+		<script src="itc-slider/itc-slider.min.js" defer></script>
 	</head>
-	<body></body>
+	<body>
+		<div class="wrapper">
+			<div class="itc-slider" data-slider="itc-slider" data-loop="true">
+				<div class="itc-slider__wrapper">
+					<div class="itc-slider__items">
+						<a href="./second.html#token1" class="itc-slider__item">
+							<img
+								class="itc-slider__img"
+								src="img/slider.jpeg"
+								alt=""
+							/>
+							<div class="itc-slider__info">
+								<h3 class="itc-slider__title">
+									<span class="red">первый.</span> 2-спальные
+									апартаменты с видом на море в ORLA
+									Dorchester Collection от застройщика Omniyat
+								</h3>
+								<div class="itc-slider__author">
+									<span>Author</span>
+									<span>16:17</span>
+								</div>
+								<p>Small Description</p>
+								<button href="url" class="itc-slider__button">
+									Подробнее
+								</button>
+							</div>
+						</a>
+						<a href="./second.html#token2" class="itc-slider__item">
+							<img
+								class="itc-slider__img"
+								src="img/slider.jpeg"
+								alt=""
+							/>
+							<div class="itc-slider__info">
+								<h3 class="itc-slider__title">
+									<span class="red">второй.</span> 2-спальные
+									апартаменты с видом на море в ORLA
+									Dorchester Collection от застройщика Omniyat
+								</h3>
+								<div class="itc-slider__author">
+									<span>Author</span>
+									<span>18:20</span>
+								</div>
+								<p>Small Description</p>
+								<button href="url" class="itc-slider__button">
+									Подробнее
+								</button>
+							</div>
+						</a>
+						<a href="./second.html#token3" class="itc-slider__item">
+							<img
+								class="itc-slider__img"
+								src="img/slider.jpeg"
+								alt=""
+							/>
+							<div class="itc-slider__info">
+								<h3 class="itc-slider__title">
+									<span class="red">третий.</span> Lorem ipsum
+									dolor sit amet consectetur adipisicing elit.
+								</h3>
+								<div class="itc-slider__author">
+									<span>Author</span>
+									<span>18:47</span>
+								</div>
+								<p>Small Description</p>
+								<button href="url" class="itc-slider__button">
+									Подробнее
+								</button>
+							</div>
+						</a>
+						<a href="./second.html#token4" class="itc-slider__item">
+							<img
+								class="itc-slider__img"
+								src="img/slider.jpeg"
+								alt=""
+							/>
+							<div class="itc-slider__info">
+								<h3 class="itc-slider__title">
+									<span class="red">четвёртый.</span> Andy
+									shoes are designed to keeping in mind
+									durability as well
+								</h3>
+								<div class="itc-slider__author">
+									<span>Author</span>
+									<span>18:47</span>
+								</div>
+								<p>Small Description</p>
+								<button href="url" class="itc-slider__button">
+									Подробнее
+								</button>
+							</div>
+						</a>
+						<a href="./second.html#token5" class="itc-slider__item">
+							<img
+								class="itc-slider__img"
+								src="img/slider.jpeg"
+								alt=""
+							/>
+							<div class="itc-slider__info">
+								<h3 class="itc-slider__title">
+									<span class="red">пятый.</span> Lorem ipsum
+									dolor sit amet consectetur adipisicing elit.
+								</h3>
+								<div class="itc-slider__author">
+									<span>Author</span>
+									<span>18:47</span>
+								</div>
+								<p>Small Description</p>
+								<button href="url" class="itc-slider__button">
+									Подробнее
+								</button>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- Кнопки для перехода к предыдущему и следующему слайду -->
+				<button class="itc-slider__btn itc-slider__btn_prev"></button>
+				<button class="itc-slider__btn itc-slider__btn_next"></button>
+			</div>
+		</div>
+	</body>
 </html>
